@@ -1,0 +1,113 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);   /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%);   /* (background, headings, buttons)*/
+    --font-family-deca: 'Lexend Deca', sans-serif;
+    --font-family-big-dysplay: 'Big Shoulders Display', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--transparent-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    width: 25%;
+    padding: 25px;
+    background-color: var(--bright-orange);
+    border-radius: 8px 0 0 8px;
+    height: 450px;
+}
+.container img{
+    padding: 20px;
+}
+.container h2{
+    font-family: var(--font-family-big-dysplay);
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0 20px 20px 20px;
+    color: var(--very-light-gray);
+}
+.container p{
+    padding: 0 20px 60px 20px;
+    color: var(--transparent-white);
+    line-height: 22px;
+    font-family: var(--font-family-deca);
+    font-weight: 400;
+    font-size: .7rem;
+}
+button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: var(--very-light-gray);
+    color: var(--bright-orange);
+    font-weight: bold;
+}
+.dos{
+    background-color: var(--dark-cyan);
+    border-radius: 0;
+}
+.tres{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+.attribution{
+    margin-top: -20px;
+}
+.attribution a{
+    text-decoration: none;
+}
+.btn2{
+    color: var(--dark-cyan);
+}
+.btn3{
+    color: var(--very-dark-cyan);
+}
+@media (max-width:600px) {
+    .main-container{
+        width: 100%;
+        display: block;
+        margin: 20px;
+    }
+    .container{
+        display: block;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+    .container p{
+        font-size: 1rem;
+    }
+    .dos{
+        border-radius: 0;
+    }
+    .tres{
+        border-radius: 0 0 8px 8px;
+        margin-bottom: 20px;
+    }
+    .attribution{
+        margin-top: 600px;
+    }
+}
+
